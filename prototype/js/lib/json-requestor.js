@@ -1,18 +1,13 @@
-function loadJSON(path, success, error)
-{
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function()
-    {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                if (success)
-                    success(JSON.parse(xhr.responseText));
-            } else {
-                if (error)
-                    error(xhr);
-            }
+function AJAX_JSON_Req(url, callback) {
+    var AJAX_req = new XMLHttpRequest();
+    AJAX_req.open("GET", url, true);
+    AJAX_req.setRequestHeader("Content-type", "application/json");
+
+    AJAX_req.onreadystatechange = function() {
+        if(AJAX_req.readyState == 4 && AJAX_req.status == 200){
+            callback(JSON.parse(AJAX_req.responseText));
         }
     };
-    xhr.open("GET", path, true);
-    xhr.send();
+
+    AJAX_req.send();
 }
