@@ -48,17 +48,20 @@
       // AJAX_JSON_Req('hosts.json').done(function (q) {
       //   console.log(q); blah = q
       // });
-      var classrooms /* classrooms data table*/
+
+      var classrooms;
 
       $.getJSON( 'hosts.json', function() {
         console.log( "success" );
       }).done(function(data) {
         console.log( "second success", data );
-        classrooms = data;
-        buildMap();
+        buildMap(data);
       })
 
-      function buildMap(){
+
+      function buildMap(classrooms){
+      console.log('classrooms: ', classrooms.classrooms);
+      classrooms = classrooms.classrooms;
 
         var style = null;
         var markerClusterer = null;
@@ -76,8 +79,8 @@
 
           var markerImage = new google.maps.MarkerImage(imageUrl,
             new google.maps.Size(24, 32));
-
-          for (var i = 0; i < 1000; ++i) {
+          for (var i = 0; i < classrooms.length; ++i) {
+            console.log('classrooms i: ', classrooms[i].latitude);
             var latLng = new google.maps.LatLng(classrooms[i].latitude,
                 classrooms[i].longitude)
             var marker = new google.maps.Marker({
