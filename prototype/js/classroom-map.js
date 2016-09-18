@@ -26,19 +26,32 @@ function buildMap(classrooms){
 
     var markerImage = new google.maps.MarkerImage(imageUrl,
       new google.maps.Size(24, 32));
+
     for (var i = 0; i < classrooms.length; ++i) {
-      console.log('classrooms i: ', classrooms[i].latitude);
       var latLng = new google.maps.LatLng(classrooms[i].latitude,
           classrooms[i].longitude)
+
+      var infowindow = new google.maps.InfoWindow({
+        content: 'contentString'
+      });
+      
       var marker = new google.maps.Marker({
         position: latLng,
         draggable: false,
         icon: markerImage
       });
+
+      marker.markerID = classrooms[i].id;
+      console.log('marker: ', marker)
+
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+
       markers.push(marker);
     }
 
-    zoom = 15
+    zoom = 18
     size = 80
     markerClusterer = new MarkerClusterer(map, markers, {
       maxZoom: zoom,
@@ -49,7 +62,7 @@ function buildMap(classrooms){
 
   function initialize() {
     map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 10,
+      zoom: 12,
       center: new google.maps.LatLng(37.779422, -122.410748),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });

@@ -15,7 +15,7 @@
       "ratings": "",
       "reviews": ""
     }, {
-      "id": "C-10",
+      "id": "C-11",
       "owners":["G-200", "G-201"],
       "gaurdians": ["G-200", "G-201"],
       "numberOfChildren": 3,
@@ -29,7 +29,7 @@
       "ratings": "",
       "reviews": ""
     }, {
-      "id": "C-10",
+      "id": "C-12",
       "owners":["G-200", "G-201"],
       "gaurdians": ["G-200", "G-201"],
       "numberOfChildren": 3,
@@ -43,7 +43,7 @@
       "ratings": "",
       "reviews": ""
     }, {
-      "id": "C-10",
+      "id": "C-13",
       "owners":["G-200", "G-201"],
       "gaurdians": ["G-200", "G-201"],
       "numberOfChildren": 3,
@@ -57,13 +57,83 @@
       "ratings": "",
       "reviews": ""
     }, {
-      "id": "C-10",
+      "id": "C-14",
       "owners":["G-200", "G-201"],
       "gaurdians": ["G-200", "G-201"],
       "numberOfChildren": 3,
       "address": "123 Alma St",
       "latitude": "37.817748",
       "longitude": "-122.279098",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-15",
+      "owners":["G-200", "G-201"],
+      "gaurdians": ["G-200", "G-201"],
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.801146",
+      "longitude": "-122.233079",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-10",
+      "owners":["G-200", "G-201"],
+      "gaurdians": ["G-200", "G-201"],
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.802079",
+      "longitude": "-122.236182",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-10",
+      "owners":["G-200", "G-201"],
+      "gaurdians": ["G-200", "G-201"],
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.801163",
+      "longitude": "-122.237995",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-10",
+      "owners":["G-200", "G-201"],
+      "gaurdians": ["G-200", "G-201"],
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.799555",
+      "longitude": "-122.252213",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-10",
+      "owners":["G-200", "G-201"],
+      "gaurdians": ["G-200", "G-201"],
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.797843",
+      "longitude": "-122.254606",
       "dedicatedRooms": 1,
       "dedicatedBathrooms": 2,
       "hoursAvailable": 3.5,
