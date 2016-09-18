@@ -30,12 +30,9 @@ function buildMap(classrooms){
     for (var i = 0; i < classrooms.length; ++i) {
       var latLng = new google.maps.LatLng(classrooms[i].latitude,
           classrooms[i].longitude)
-
-      var infowindow = new google.maps.InfoWindow({
-        content: 'contentString'
-      });
       
       var marker = new google.maps.Marker({
+        id: classrooms[i].id,
         position: latLng,
         draggable: false,
         icon: markerImage
@@ -44,12 +41,14 @@ function buildMap(classrooms){
       marker.markerID = classrooms[i].id;
       console.log('marker: ', marker)
 
-      marker.addListener('click', function() {
-        infowindow.open(map, marker);
+      marker.addListener('click', function(e) {
+        console.log('this: ', this.id);
       });
 
       markers.push(marker);
     }
+
+    console.log('marker: ', marker)
 
     zoom = 18
     size = 80
