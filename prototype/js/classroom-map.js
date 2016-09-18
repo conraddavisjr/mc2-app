@@ -1,21 +1,14 @@
 // AJAX_JSON_Req('hosts.json').done(function (q) {
-//   console.log(q); blah = q
+//   vinilla js req, save for later imp. no jquery
 // });
-console.log("TESTING");
 var classrooms;
 
 $.getJSON( 'hosts.json', function() {
-  console.log( "success" );
 }).done(function(data) {
-  console.log( "second success", data );
-  buildMap(data);
+  buildMap(data.classrooms);
 })
 
-
-
 function buildMap(classrooms){
-  console.log('classrooms: ', classrooms.classrooms);
-  classrooms = classrooms.classrooms;
 
   var style = null;
   var markerClusterer = null;
@@ -45,8 +38,8 @@ function buildMap(classrooms){
       markers.push(marker);
     }
 
-    zoom = 10
-    size = 60
+    zoom = 15
+    size = 80
     markerClusterer = new MarkerClusterer(map, markers, {
       maxZoom: zoom,
       gridSize: size,
@@ -56,7 +49,7 @@ function buildMap(classrooms){
 
   function initialize() {
     map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 8,
+      zoom: 10,
       center: new google.maps.LatLng(37.779422, -122.410748),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
