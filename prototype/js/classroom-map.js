@@ -42,6 +42,7 @@ function buildMap(classrooms){
       console.log('marker: ', marker)
 
       marker.addListener('click', function(e) {
+        // map.setCenter(this.getPosition());
         console.log('this: ', this.id);
       });
 
