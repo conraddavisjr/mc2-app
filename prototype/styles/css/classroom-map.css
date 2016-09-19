@@ -28,6 +28,11 @@ h2 {
   font-size: 1.5em;
 }
 
+div {
+  overflow: auto;
+  zoom: 1;
+}
+
 .container--center {
   margin: 0.5em auto;
   display: table;
@@ -49,6 +54,23 @@ h2 {
 }
 .classroom-information__banner img {
   width: 100%;
+}
+
+.classroom-information__snippet {
+  padding: 0 5%;
+}
+
+.raitings {
+  float: right;
+}
+
+.address {
+  float: left;
+}
+
+.raitings__score {
+  text-align: right;
+  font-size: 1.5em;
 }
 
 .hosts,
