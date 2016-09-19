@@ -19,21 +19,22 @@
 // Hosts info styling
 // 
 h2
-  font-size: 1.5em
+  text-transform: uppercase
   text-align: center
   margin-bottom: 0
+  font-size: 1.5em
 .container--center
-  display: table
-  margin: 0 auto
-  background-color: #ffffff
-  margin-bottom: 0.5em
   box-shadow: 0px 0px 14px 1px #eee
+  background-color: white
+  margin: 0.5em auto
+  display: table
+  width: 90%
 .classroom-information
   background-color: $soft-gray
 .classroom-information__banner
-  overflow: hidden
-  max-height: 400px
   text-align: center
+  max-height: 400px
+  overflow: hidden
   img
     width: 100%
 .host,
@@ -44,7 +45,12 @@ h2
   height: 150px
   width: 150px
   margin: 1em
+  &:nth-child(n + 3)
+    margin-left: 0em
 .host
   background-image: url(../../images/g-10.jpg)
 .student
   background-image: url(../../images/maxie.jpg)
+  border-radius: 50%
+  height: 100px
+  width: 100px
