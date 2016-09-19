@@ -44,6 +44,7 @@ function buildMap(classrooms){
       marker.addListener('click', function(e) {
         // map.setCenter(this.getPosition());
         console.log('this: ', this.id);
+        getClassroomDetails();
       });
 
       markers.push(marker);
@@ -68,6 +69,10 @@ function buildMap(classrooms){
     });
 
     refreshMap();
+  }
+
+  function getClassroomDetails(){
+    console.log('getClassroomDetails Called')
   }
 
   if (navigator.geolocation) {
