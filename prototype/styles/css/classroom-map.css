@@ -28,9 +28,15 @@ h2 {
   font-size: 1.5em;
 }
 
-div {
+div:not(#map-container, #map) {
   overflow: auto;
   zoom: 1;
+}
+
+.fa-star {
+  margin-left: 0.3em;
+  font-size: 0.9em;
+  color: gold;
 }
 
 .container--center {
@@ -40,11 +46,38 @@ div {
 
 .classroom-information {
   background-color: #f7f7f7;
-  height: 90vh;
-  overflow: scroll;
+  transform: translateX(-50%);
+  visibility: hidden;
   position: absolute;
-  top: 0;
+  transition: 0.5s;
+  overflow: scroll;
+  height: 90vh;
+  opacity: 0;
   z-index: 2;
+  left: 50%;
+  top: -2em;
+}
+
+.classroom-information--show {
+  visibility: visible;
+  opacity: 1;
+  top: 0em;
+}
+
+.overlay-background {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.overlay-background--show {
+  visibility: visible;
+  opacity: 0.9;
 }
 
 .classroom-information__banner {

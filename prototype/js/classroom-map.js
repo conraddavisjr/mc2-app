@@ -73,6 +73,9 @@ function buildMap(classrooms){
 
   function getClassroomDetails(){
     console.log('getClassroomDetails Called')
+    // reveal the host's info overlay
+    $('.classroom-information').addClass('classroom-information--show');
+    $('.overlay-background').addClass('overlay-background--show');
   }
 
   if (navigator.geolocation) {
