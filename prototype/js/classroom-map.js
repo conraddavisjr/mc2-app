@@ -3,8 +3,8 @@
 // });
 var classrooms;
 
-$.getJSON( 'hosts.json', function() {
-}).done(function(data) {
+$.getJSON( 'hosts.json', function() {} )
+.done(function(data) {
   buildMap(data.classrooms);
 })
 
@@ -13,6 +13,10 @@ function buildMap(classrooms){
   var style = null;
   var markerClusterer = null;
   var map = null;
+  var $classroomInformation = $('.classroom-information');
+  var $overlayBackground = $('.overlay-background');
+
+  $overlayBackground.on('click', closeClassroomDetails);
 
   var imageUrl = 'http://chart.apis.google.com/chart?cht=mm&chs=24x32&' +
       'chco=FFFFFF,008CFF,000000&ext=.png';
@@ -39,18 +43,13 @@ function buildMap(classrooms){
       });
 
       marker.markerID = classrooms[i].id;
-      console.log('marker: ', marker)
 
       marker.addListener('click', function(e) {
         // map.setCenter(this.getPosition());
-        console.log('this: ', this.id);
         getClassroomDetails();
       });
-
       markers.push(marker);
     }
-
-    console.log('marker: ', marker)
 
     zoom = 18
     size = 80
@@ -71,11 +70,29 @@ function buildMap(classrooms){
     refreshMap();
   }
 
+  // continue to request data tables in the background
+  // so we can have the data before the user requests it
+  // 
+  $.getJSON( 'gaurdian.json', function() {})
+  .done(function(data) {
+    buildMap(data.classrooms);
+  })
+
   function getClassroomDetails(){
-    console.log('getClassroomDetails Called')
     // reveal the host's info overlay
-    $('.classroom-information').addClass('classroom-information--show');
-    $('.overlay-background').addClass('overlay-background--show');
+    // and populate the DOM with cooresponds data
+    // this function maps the classroom data table
+    // to the Gaurdian and Student data tables
+
+
+    $classroomInformation.addClass('classroom-information--show');
+    $overlayBackground.addClass('overlay-background--show');
+  }
+
+  function closeClassroomDetails(){
+    // close the host's info overlay
+    $classroomInformation.removeClass('classroom-information--show');
+    $overlayBackground.removeClass('overlay-background--show');
   }
 
   if (navigator.geolocation) {

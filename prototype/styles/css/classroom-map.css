@@ -46,12 +46,14 @@ div:not(#map-container, #map) {
 
 .classroom-information {
   background-color: #f7f7f7;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   visibility: hidden;
   position: absolute;
   transition: 0.5s;
   overflow: scroll;
   height: 90vh;
+  width: 100%;
   opacity: 0;
   z-index: 2;
   left: 50%;
@@ -72,6 +74,7 @@ div:not(#map-container, #map) {
   height: 100%;
   width: 100%;
   background-color: white;
+  transition: 1s;
   z-index: 1;
 }
 
@@ -117,8 +120,8 @@ div:not(#map-container, #map) {
 .student {
   background-size: cover;
   display: inline-block;
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   margin: 1em;
 }
 .host:nth-child(n + 3),
@@ -133,8 +136,8 @@ div:not(#map-container, #map) {
 .student {
   background-image: url(../../images/maxie.jpg);
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
 }
 
 /*# sourceMappingURL=classroom-map.css.map */

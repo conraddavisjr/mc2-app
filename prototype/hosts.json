@@ -17,7 +17,7 @@
       "reviews": ""
     }, {
       "id": "C-11",
-      "owners":["G-200", "G-201"],
+      "owners":["G-202", "G-203"],
       "gaurdians": ["G-200", "G-201"],
       "portrait": "",
       "numberOfChildren": 3,
@@ -32,7 +32,7 @@
       "reviews": ""
     }, {
       "id": "C-12",
-      "owners":["G-200", "G-201"],
+      "owners":["G-204", "G-205"],
       "gaurdians": ["G-200", "G-201"],
       "portrait": "",
       "numberOfChildren": 3,
@@ -47,7 +47,7 @@
       "reviews": ""
     }, {
       "id": "C-13",
-      "owners":["G-200", "G-201"],
+      "owners":["G-206", "G-207"],
       "gaurdians": ["G-200", "G-201"],
       "portrait": "",
       "numberOfChildren": 3,
@@ -62,7 +62,7 @@
       "reviews": ""
     }, {
       "id": "C-14",
-      "owners":["G-200", "G-201"],
+      "owners":["G-208", "G-209"],
       "gaurdians": ["G-200", "G-201"],
       "portrait": "",
       "numberOfChildren": 3,
@@ -77,7 +77,7 @@
       "reviews": ""
     }, {
       "id": "C-15",
-      "owners":["G-200", "G-201"],
+      "owners":["G-210", "G-211"],
       "gaurdians": ["G-200", "G-201"],
       "portrait": "",
       "numberOfChildren": 3,
@@ -92,7 +92,7 @@
       "reviews": ""
     }, {
       "id": "C-16",
-      "owners":["G-200", "G-201"],
+      "owners":["G-212", "G-213"],
       "gaurdians": ["G-200", "G-201"],
       "portrait": "",
       "numberOfChildren": 3,
@@ -107,7 +107,7 @@
       "reviews": ""
     }, {
       "id": "C-17",
-      "owners":["G-200", "G-201"],
+      "owners":["G-214", "G-215"],
       "gaurdians": ["G-200", "G-201"],
       "portrait": "",
       "numberOfChildren": 3,
@@ -122,7 +122,7 @@
       "reviews": ""
     }, {
       "id": "C-18",
-      "owners":["G-200", "G-201"],
+      "owners":["G-216", "G-217"],
       "gaurdians": ["G-200", "G-201"],
       "portrait": "",
       "numberOfChildren": 3,
@@ -137,13 +137,163 @@
       "reviews": ""
     }, {
       "id": "C-19",
-      "owners":["G-200", "G-201"],
+      "owners":["G-218", "G-219"],
       "gaurdians": ["G-200", "G-201"],
       "portrait": "",
       "numberOfChildren": 3,
       "address": "123 Alma St",
       "latitude": "37.797843",
       "longitude": "-122.254606",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    },{
+      "id": "C-20",
+      "owners":["G-220", "G-221"],
+      "gaurdians": ["G-200", "G-201"],
+      "portrait": "",
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "31.981906",
+      "longitude": "-102.614076",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-21",
+      "owners":["G-222", "G-223"],
+      "gaurdians": ["G-200", "G-201"],
+      "portrait": "",
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.801894",
+      "longitude": "-122.244532",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-22",
+      "owners":["G-224", "G-225"],
+      "gaurdians": ["G-200", "G-201"],
+      "portrait": "",
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.785974",
+      "longitude": "-122.419838",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-23",
+      "owners":["G-226", "G-227"],
+      "gaurdians": ["G-200", "G-201"],
+      "portrait": "",
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.786488",
+      "longitude": "-122.415003",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-24",
+      "owners":["G-228", "G-229"],
+      "gaurdians": ["G-200", "G-201"],
+      "portrait": "",
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.783334",
+      "longitude": "-122.417556",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-25",
+      "owners":["G-230", "G-231"],
+      "gaurdians": ["G-200", "G-201"],
+      "portrait": "",
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.774964",
+      "longitude": "-122.421180",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-26",
+      "owners":["G-232", "G-233"],
+      "gaurdians": ["G-200", "G-201"],
+      "portrait": "",
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.362105",
+      "longitude": "-121.955056",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-27",
+      "owners":["G-234", "G-235"],
+      "gaurdians": ["G-200", "G-201"],
+      "portrait": "",
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.801163",
+      "longitude": "-122.237995",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-28",
+      "owners":["G-236", "G-237"],
+      "gaurdians": ["G-200", "G-201"],
+      "portrait": "",
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.797411",
+      "longitude": "-122.476292",
+      "dedicatedRooms": 1,
+      "dedicatedBathrooms": 2,
+      "hoursAvailable": 3.5,
+      "specialOfferings": "",
+      "ratings": "",
+      "reviews": ""
+    }, {
+      "id": "C-29",
+      "owners":["G-238", "G-239"],
+      "gaurdians": ["G-200", "G-201"],
+      "portrait": "",
+      "numberOfChildren": 3,
+      "address": "123 Alma St",
+      "latitude": "37.362511",
+      "longitude": "-121.964434",
       "dedicatedRooms": 1,
       "dedicatedBathrooms": 2,
       "hoursAvailable": 3.5,

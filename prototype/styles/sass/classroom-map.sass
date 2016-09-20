@@ -35,12 +35,14 @@ div:not(#map-container, #map)
   display: table
 .classroom-information
   background-color: $soft-gray
+  -webkit-transform: translateX(-50%)
   transform: translateX(-50%)
   visibility: hidden
   position: absolute
   transition: 0.5s
   overflow: scroll
   height: 90vh
+  width: 100%
   opacity: 0
   z-index: 2
   left: 50%
@@ -57,6 +59,7 @@ div:not(#map-container, #map)
   height: 100%
   width: 100%
   background-color: white
+  transition: 1s
   z-index: 1
 .overlay-background--show
   visibility: visible
@@ -86,8 +89,8 @@ div:not(#map-container, #map)
   background-size: cover
   display: inline-block
   // border-radius: 50%
-  height: 150px
-  width: 150px
+  height: 100px
+  width: 100px
   margin: 1em
   &:nth-child(n + 3)
     margin-left: 0em
@@ -96,5 +99,5 @@ div:not(#map-container, #map)
 .student
   background-image: url(../../images/maxie.jpg)
   border-radius: 50%
-  height: 100px
-  width: 100px
+  height: 70px
+  width: 70px
